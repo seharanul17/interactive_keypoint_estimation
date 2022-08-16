@@ -7,6 +7,8 @@
 <a href="https://github.com/ts-kim/">Taesung Kim*</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
 Taewoo Kim &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
 <a href="https://sites.google.com/site/jaegulchoo/">Jaegul Choo</a> &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+
+  
 Dong-Wook Kim &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
 Byungduk Ahn &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
 In-Seok Song &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
@@ -18,7 +20,7 @@ Yoon-Ji Kim &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 *Denotes Equal Contribution
 </div>
 
-<img src="./figs/video.gif" width="1000px" height="500px">
+<img src="./figs/video_short.gif" width="1000px" height="500px">
 
 
 # Abstract
