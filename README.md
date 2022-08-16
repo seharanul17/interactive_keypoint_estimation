@@ -20,7 +20,7 @@ Yoon-Ji Kim &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 *Denotes Equal Contribution
 </div>
 
-<img src="./figs/video_short.gif" width="1000px" height="500px">
+<img src="./video_short.gif" width="1000px" height="500px">
 
 
 # Abstract
