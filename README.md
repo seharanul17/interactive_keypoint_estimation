@@ -3,8 +3,8 @@
 
 
 <div align="center">
-  <div><a href="https://sites.google.com/view/jinhee-kim">Jinhee Kim*</a><br>seharanul17@kaist.ac.kr<br>KAIST</div>
-  <div><a href="https://github.com/ts-kim/">Taesung Kim*</a><br>zkm1989@kaist.ac.kr<br>KAIST</div>
+  <div display="inline"><a href="https://sites.google.com/view/jinhee-kim">Jinhee Kim*</a><br>seharanul17@kaist.ac.kr<br>KAIST</div>
+  <div display="inline"><a href="https://github.com/ts-kim/">Taesung Kim*</a><br>zkm1989@kaist.ac.kr<br>KAIST</div>
 Taewoo Kim 
 <a href="https://sites.google.com/site/jaegulchoo/">Jaegul Choo</a>
 Dong-Wook Kim 
