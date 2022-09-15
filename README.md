@@ -2,8 +2,8 @@
 <div><h1 align="center">Morphology-Aware Interactive Keypoint Estimation</h1></div>
 
 <div align="center">
-  <div style="display:inline-block"><a href="https://sites.google.com/view/jinhee-kim">Jinhee Kim*</a><br>seharanul17@kaist.ac.kr<br>KAIST</div>
-  <div style="display:inline-block"><a href="https://github.com/ts-kim/">Taesung Kim*</a><br>zkm1989@kaist.ac.kr<br>KAIST</div>
+  <span><a href="https://sites.google.com/view/jinhee-kim">Jinhee Kim*</a><br>seharanul17@kaist.ac.kr<br>KAIST</span>
+  <span><a href="https://github.com/ts-kim/">Taesung Kim*</a><br>zkm1989@kaist.ac.kr<br>KAIST</span>
 Taewoo Kim 
 <a href="https://sites.google.com/site/jaegulchoo/">Jaegul Choo</a>
 Dong-Wook Kim 
