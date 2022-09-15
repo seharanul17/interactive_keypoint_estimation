@@ -51,9 +51,10 @@ We provide the code to conduct experiments on a public dataset, the AASCE challe
     
 2. Preprocess the data.
     - Set the variable ``source_path `` in the ``data_preprocessing.py`` file as your dataset path.
-    - Run the ``data_preprocessing.py`` file: 
-    
-    ```python data_preprocessing.py```
+    - Run the following command: 
+    ```
+    python data_preprocessing.py
+    ```
 
 ### Download the pre-trained model
 
@@ -62,20 +63,22 @@ To test the pre-trained model, download the model file from [here](https://www.d
 ### Usage
 #### Run training code
 Run the following command:
-
-    ```bash train.sh ```
+    ```
+    bash train.sh 
+    ```
 #### Run evaluation code 
     - To test the pre-trained model: 
         1. Locate the pre-trained model in the ``../save/`` folder.
         2. Run the test code:
-        
-        ```bash test.sh```
+        ```
+        bash test.sh
+        ```
     - To test your own model:
         1. Change the value of the argument ``--only_test_version {your_model_name}`` in the ``test.sh`` file.
         2. Run the test code:
-        
-        
-        ```bash test.sh```
+        ```
+        bash test.sh
+        ```
 
 When the evaluation ends, the mean radial error (MRE) of model prediction and manual revision will be reported.
 The ``sargmax_mm_MRE`` corresponds to the MRE reported in Fig. 4.
@@ -90,8 +93,8 @@ For more information, please see Fig. 4 in our main manuscript.
 - "Ours (model revision)" indicates automatically revised results by the proposed interactive keypoint estimation approach.
 - "Ours (manual revision)" indicates fully-manually revised results by a user without the assistance of an interactive model.
 
-|      Method     	| No. user modification |||||	|
-|                  	| 0	| 1	| 2	| 3  	| 4	| 5	|
+|      Method     	| No. user modification |.|.|.|.|	.|
+|      Method        	| 0	| 1	| 2	| 3  	| 4	| 5	|
 |:----------------:	|:-----------------------:	|:-------:	|:-------:	|:-------:	|:-------:	|:-------:	|
 | Ours (model revision) |          58.58          	|  35.39  	|  29.35  	|  24.02  	|  21.06  	|  17.67  	|
 |  Ours (manual revision) 	|          58.58          	|  55.85  	|  53.33  	|  50.90  	|  48.55  	|  47.03  	|
