@@ -4,13 +4,12 @@
 <div align="center">
   <span><a href="https://sites.google.com/view/jinhee-kim">Jinhee Kim*</a><br>seharanul17@kaist.ac.kr<br>KAIST</span>
   <span><a href="https://github.com/ts-kim/">Taesung Kim*</a><br>zkm1989@kaist.ac.kr<br>KAIST</span>
-Taewoo Kim 
-<a href="https://sites.google.com/site/jaegulchoo/">Jaegul Choo</a>
-Dong-Wook Kim 
-Byungduk Ahn 
-In-Seok Song 
-Yoon-Ji Kim 
-
+  <span>Taewoo Kim<br>specia1ktu@kaist.ac.kr<br>KAIST</span><br>
+  <span> <a href="https://sites.google.com/site/jaegulchoo/">Jaegul Choo</a> jchoo@kaist.ac.kr<br>KAIST</span>
+  <span>Dong-Wook Kim <br> dwkim9393@naver.com <br>Korea University Anam Hospital</span><br>
+  <span>Byungduk Ahn <br> bdspeed@naver.com <br>Papa's dental clinic</span>
+  <span>In-Seok Song <br>densis@korea.ac.kr<br>Korea University Anam Hospital</span>
+  <span>Yoon-Ji Kim <br>yn0331@gmail.com<br>Asan Medical Center, Ulsan University School of Medicine</span>
 </div>
 
 <div align="center">
