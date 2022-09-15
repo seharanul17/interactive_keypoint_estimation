@@ -29,7 +29,7 @@ Instead, we provide the code for experiments on the AASCE challenge dataset.
 
 ## Pre-trained model
 
-Since the file size of the pre-trained model is over 100MB, we can not upload the model on the CMT submission file.
+Since the file size of the pre-trained model is over 100MB, we can not upload the model on the GitHub page.
 Therefore, to test the pre-trained model, you should download the model file from this [link](https://www.dropbox.com/sh/m53iqw9loddqhfq/AAD0KuCCxpXsBE435Hw3KJU8a?dl=0).
 
 ## Training
