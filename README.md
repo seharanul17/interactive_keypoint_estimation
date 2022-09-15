@@ -3,16 +3,14 @@
 
 
 <div align="center">
-<a href="https://sites.google.com/view/jinhee-kim">Jinhee Kim*</a> &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/ts-kim/">Taesung Kim*</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Taewoo Kim &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://sites.google.com/site/jaegulchoo/">Jaegul Choo</a> &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-
-  
-Dong-Wook Kim &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-Byungduk Ahn &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-In-Seok Song &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-Yoon-Ji Kim &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  <div><a href="https://sites.google.com/view/jinhee-kim">Jinhee Kim*</a><br>seharanul17@kaist.ac.kr<br>KAIST</div>
+  <div><a href="https://github.com/ts-kim/">Taesung Kim*</a><br>zkm1989@kaist.ac.kr<br>KAIST</div>
+Taewoo Kim 
+<a href="https://sites.google.com/site/jaegulchoo/">Jaegul Choo</a>
+Dong-Wook Kim 
+Byungduk Ahn 
+In-Seok Song 
+Yoon-Ji Kim 
 
 </div>
 
