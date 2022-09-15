@@ -25,21 +25,27 @@
 <img align="center" src="./video.gif" width="1000px" height="500px">
 
 <div>
+
+<h3>Link</h3>
+<a href="https://sites.google.com/site/jaegulchoo/"><b>[Paper]</b></a>
+&emsp;
+<a href="https://youtu.be/Z5gtLviQ_TU"><b>[Video]</b></a>
+&emsp;
+<a href="https://github.com/seharanul17/interactive_keypoint_estimation"><b>[Code]</b></a>
+
+
 <h3>Abstract</h3>
 
 Diagnosis based on medical images, such as X-ray images, often involves manual annotation of anatomical keypoints. However, this process involves significant human efforts and can thus be a bottleneck in the diagnostic process. To fully automate this procedure, deep-learningbased methods have been widely proposed and have achieved high performance in detecting keypoints in medical images. However, these methods still have clinical limitations: accuracy cannot be guaranteed for all cases, and it is necessary for doctors to double-check all predictions of models.
 In response, we propose a novel deep neural network that, given an Xray image, automatically detects and refines the anatomical keypoints through a user-interactive system in which doctors can fix mispredicted keypoints with fewer clicks than needed during manual revision. Using our own collected data and the publicly available AASCE dataset, we demonstrate the effectiveness of the proposed method in reducing the annotation costs via extensive quantitative and qualitative results.
+
+
+
+<h3>Poster</h3>
+<img align="center" src="./online_poster_miccai22.png" width="1000px" height="500px">
+
+
+
 </div>
-
-<div>
-  <h3>Paper</h3>
-  
-  
-  <h3>Poster</h3>
-  <img align="center" src="./online_poster_miccai22.png" width="1000px" height="500px">
-
-  
-</div>
-
 
 
