@@ -1,12 +1,13 @@
 <div><h1 align="center">Morphology-Aware Interactive Keypoint Estimation (MICCAI 2022)</h1></div>
 
 <div align="center">
-  <pre> A B C
-  D E F
-  G I J</pre>
   <a href="https://sites.google.com/view/jinhee-kim">Jinhee Kim*</a> <a href="https://github.com/ts-kim/">Taesung Kim*</a> Taewoo Kim<br>
   seharanul17@kaist.ac.kr zkm1989@kaist.ac.kr specia1ktu@kaist.ac.kr<br>
-  <pre>KAIST KAIST KAIST</pre><br>
+  <pre>
+  KAIST KAIST KAIST
+  KAIST KAIST KAIST
+  KAIST KAIST KAIST
+  </pre>
 
   <a href="https://sites.google.com/site/jaegulchoo/">Jaegul Choo</a> Dong-Wook Kim Byungduk Ahn<br>
   jchoo@kaist.ac.kr dwkim9393@naver.com bdspeed@naver.com<br>
