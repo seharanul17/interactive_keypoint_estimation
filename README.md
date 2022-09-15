@@ -50,11 +50,11 @@ The ``sargmax_mm_MRE`` indicates the MRE reported in Fig. 4.
 The table below shows the mean radial error (MRE) of our proposed model and manual revision from the initial prediction of the model on AASCE dataset, prolonging the number of interactions.
 The values of the table are the same with Fig. 4.
 
-- "Ours" indicates the model prediction results of the proposed model. 
-- "Ours - manual reivision" indicates the manually revised results from the initial prediction of "Ours".
+- "Ours (model revision)" indicates the model prediction results of the proposed model. 
+- "Ours (manual reivision)" indicates the manually revised results from the initial prediction of "Ours".
 
 |      Method      	| MRE with 0 interactions 	| with 1  	| with 2  	| with 3  	| with 4  	| with 5  	|
 |:----------------:	|:-----------------------:	|:-------:	|:-------:	|:-------:	|:-------:	|:-------:	|
-| Ours |          58.58          	|  35.39  	|  29.35  	|  24.02  	|  21.06  	|  17.67  	|
-|  Ours - manual revision 	|          58.58          	|  55.85  	|  53.33  	|  50.90  	|  48.55  	|  47.03  	|
+| Ours (model revision) |          58.58          	|  35.39  	|  29.35  	|  24.02  	|  21.06  	|  17.67  	|
+|  Ours (manual revision) 	|          58.58          	|  55.85  	|  53.33  	|  50.90  	|  48.55  	|  47.03  	|
 
