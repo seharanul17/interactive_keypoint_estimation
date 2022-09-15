@@ -1,0 +1,53 @@
+PATH:
+  ROOT_PATH: './'
+  DATA:
+    IMAGE: './data/dataset16_512/'
+    TABLE: './data/dataset16_512/'
+
+Dataset:
+  NAME: 'dataset16'
+  image_size: [512, 256]
+  num_keypoint: 68
+  heatmap_std: 7.5
+  aug:
+    type: 'aug_default'
+    p: [0.2, 0.2, 0.2, 0.2]
+  subpixel_decoding_patch_size: 15
+  subpixel_decoding: True
+
+Model:
+  NAME: 'RITM_SE_HRNet32'
+  SE_maxpool: True
+
+Optimizer:
+  optimizer: 'Adam'
+  lr: 0.001
+  scheduler: ''
+
+Train:
+  patience: 50
+  batch_size: 4
+  epoch: 5000
+  metric: ["MAE", "RMSE", "MRE"]
+  decision_metric: 'hargmax_mm_MRE'
+  SR_standard: ''
+
+
+Hint:
+  max_hint: 13
+  num_dist: datset16_1
+
+
+MISC:
+  TB: True
+  gpu: '0'
+  num_workers: 0
+
+Morph:
+  use: True
+  pairs: 'dataset16'
+  angle_lambda: 0.01
+  distance_lambda: 0.01
+  distance_l1: True
+  cosineSimilarityLoss: True
+  threePointAngle: True
