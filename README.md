@@ -91,9 +91,9 @@ For more information, please see Fig. 4 in our main manuscript.
 - "Ours (model revision)" indicates automatically revised results by the proposed interactive keypoint estimation approach.
 - "Ours (manual revision)" indicates fully-manually revised results by a user without the assistance of an interactive model.
 
-|      Method     	| Number|of|user| modification| | |
+|      Method     	| No. of user modification | | |  | | |
 |:----------------:	|:-----------------------:	|:-------:	|:-------:	|:-------:	|:-------:	|:-------:	|
-|              	| 0	| 1	| 2	| 3  	| 4	| 5	|
+|              	| 0 (initial prediction)	| 1	| 2	| 3  	| 4	| 5	|
 | Ours (model revision) |          58.58          	|  35.39  	|  29.35  	|  24.02  	|  21.06  	|  17.67  	|
 |  Ours (manual revision) 	|          58.58          	|  55.85  	|  53.33  	|  50.90  	|  48.55  	|  47.03  	|
 
