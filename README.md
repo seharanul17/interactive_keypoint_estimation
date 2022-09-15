@@ -52,28 +52,26 @@ We provide the code to conduct experiments on a public dataset, the AASCE challe
 2. Preprocess the data.
     - Set the variable ``source_path `` in the ``data_preprocessing.py`` file as your dataset path.
     - Run the following command: 
-    ```
-    python data_preprocessing.py
-    ```
+        ```
+        python data_preprocessing.py
+        ```
 
 ### Download the pre-trained model
 
 To test the pre-trained model, download the model file from [here](https://www.dropbox.com/sh/m53iqw9loddqhfq/AAD0KuCCxpXsBE435Hw3KJU8a?dl=0).
 
 ### Usage
-#### Run training code
-Run the following command:
+To run the training code, run the following command:
     ```
     bash train.sh 
     ```
-#### Run evaluation code 
-    - To test the pre-trained model: 
+To test the pre-trained model: 
         1. Locate the pre-trained model in the ``../save/`` folder.
         2. Run the test code:
         ```
         bash test.sh
         ```
-    - To test your own model:
+To test your own model:
         1. Change the value of the argument ``--only_test_version {your_model_name}`` in the ``test.sh`` file.
         2. Run the test code:
         ```
