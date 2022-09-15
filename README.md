@@ -61,17 +61,17 @@ We provide the code to conduct experiments on a public dataset, the AASCE challe
 To test the pre-trained model, download the model file from [here](https://www.dropbox.com/sh/m53iqw9loddqhfq/AAD0KuCCxpXsBE435Hw3KJU8a?dl=0).
 
 ### Usage
-To run the training code, run the following command:
+- To run the training code, run the following command:
     ```
     bash train.sh 
     ```
-To test the pre-trained model: 
+- To test the pre-trained model: 
         1. Locate the pre-trained model in the ``../save/`` folder.
         2. Run the test code:
         ```
         bash test.sh
         ```
-To test your own model:
+- To test your own model:
         1. Change the value of the argument ``--only_test_version {your_model_name}`` in the ``test.sh`` file.
         2. Run the test code:
         ```
@@ -92,8 +92,8 @@ For more information, please see Fig. 4 in our main manuscript.
 - "Ours (manual revision)" indicates fully-manually revised results by a user without the assistance of an interactive model.
 
 |      Method     	| No. user modification |.|.|.|.|	.|
-|      Method        	| 0	| 1	| 2	| 3  	| 4	| 5	|
 |:----------------:	|:-----------------------:	|:-------:	|:-------:	|:-------:	|:-------:	|:-------:	|
+|      Method        	| 0	| 1	| 2	| 3  	| 4	| 5	|
 | Ours (model revision) |          58.58          	|  35.39  	|  29.35  	|  24.02  	|  21.06  	|  17.67  	|
 |  Ours (manual revision) 	|          58.58          	|  55.85  	|  53.33  	|  50.90  	|  48.55  	|  47.03  	|
 
