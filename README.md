@@ -1,6 +1,19 @@
 # Morphology-Aware Interactive Keypoint Estimation (MICCAI 2022 - Paper ID 2100)
 
-Pytorch implementation of "Morphology-Aware Interactive Keypoint Estimation".
+[<ins>__[Paper]__</ins>]() &nbsp; 
+&nbsp; 
+ [<ins>__[Project page]__</ins>](https://seharanul17.github.io/interactive_keypoint_estimation/)
+&nbsp; 
+ [<ins>__[Video]__</ins>](https://youtu.be/Z5gtLviQ_TU)
+
+## Introduction
+This is the official Pytorch implementation of [Morphology-Aware Interactive Keypoint Estimation]().
+
+Diagnosis based on medical images, such as X-ray images, often involves manual annotation of anatomical keypoints. However, this process involves significant human efforts and can thus be a bottleneck in the diagnostic process.
+To fully automate this procedure, deep-learning-based methods have been widely proposed and have achieved high performance in detecting keypoints in medical images. 
+However, these methods still have clinical limitations: accuracy cannot be guaranteed for all cases, and it is necessary for doctors to double-check all predictions of models. In response, we propose a novel deep neural network that, given an X-ray image, automatically detects and refines the anatomical keypoints through a user-interactive system in which doctors can fix mispredicted keypoints with fewer clicks than needed during manual revision.
+Using our own collected data and the publicly available AASCE dataset, we demonstrate the effectiveness of the proposed method in reducing the annotation costs via extensive quantitative and qualitative results. A demo video of our approach is available on our [project webpage](https://seharanul17.github.io/interactive_keypoint_estimation/).
+
 
 ## Prerequisites
 Install following dependencies:
@@ -32,7 +45,7 @@ Instead, we provide the code for experiments on the AASCE challenge dataset.
 Since the file size of the pre-trained model is over 100MB, we can not upload the model on the GitHub page.
 Therefore, to test the pre-trained model, you should download the model file from this [link](https://www.dropbox.com/sh/m53iqw9loddqhfq/AAD0KuCCxpXsBE435Hw3KJU8a?dl=0).
 
-## Training
+## Usage
 1. To train the model,
     - run ``bash train.sh ``
 2. To test the model,
