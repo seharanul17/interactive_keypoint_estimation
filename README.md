@@ -11,11 +11,11 @@
   Dong-Wook Kim &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
   Byungduk Ahn<br>
   &emsp;jchoo@kaist.ac.kr &emsp;&emsp;&emsp; dwkim9393@naver.com &emsp;&emsp;&emsp; bdspeed@naver.com<br>
-  &emsp;&emsp; KAIST &emsp;&emsp;&emsp;&emsp; Korea University Anam Hospital &emsp;&emsp; Papa's dental clinic<br>
+  &emsp;&emsp; KAIST &emsp;&emsp;&emsp;&emsp; Korea University Anam Hospital &emsp;&emsp; Papa's dental clinic<br><br>
   
   In-Seok Song &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Yoon-Ji Kim<br>&emsp;
   densis@korea.ac.kr &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; yn0331@gmail.com<br>
-  Korea University Anam Hospital &emsp;&emsp;&emsp; <span>Asan Medical Center</span>&emsp;
+  Korea University Anam Hospital &emsp;&emsp;&emsp; Asan Medical Center &emsp;<br>
 </div>
 
 <div align="center">
@@ -27,12 +27,13 @@
 <div>
 
 <h3>Link</h3>
+ <div align="center">
 <a href="https://sites.google.com/site/jaegulchoo/"><b>[Paper]</b></a>
 &emsp;
 <a href="https://youtu.be/Z5gtLviQ_TU"><b>[Video]</b></a>
 &emsp;
 <a href="https://github.com/seharanul17/interactive_keypoint_estimation"><b>[Code]</b></a>
-
+  </div>
 
 <h3>Abstract</h3>
 
