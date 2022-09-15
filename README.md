@@ -1,5 +1,5 @@
 
-<div><h1 align="center">Morphology-Aware Interactive Keypoint Estimation</h3></div>
+<div><h1 align="center">Morphology-Aware Interactive Keypoint Estimation</h1></div>
 
 
 <div align="center">
