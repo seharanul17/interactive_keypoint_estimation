@@ -3,7 +3,7 @@
 [<ins>__[Paper]__</ins>]() &nbsp; 
 &nbsp; 
  [<ins>__[Project page]__</ins>](https://seharanul17.github.io/interactive_keypoint_estimation/)
-&nbsp; 
+&nbsp;  &nbsp; 
  [<ins>__[Video]__</ins>](https://youtu.be/Z5gtLviQ_TU)
 
 ## Introduction
@@ -18,7 +18,7 @@ The experiments were performed on a single GeForce RTX 3090 in the training and 
 
 ##  Quick start 
 
-### 1. Prerequisites
+### Prerequisites
 Install following dependencies:
 - Python 3.8
 - torch == 1.8.0
@@ -28,7 +28,8 @@ Install following dependencies:
 - pytz
 - tqdm
 
-### 2. Installation
+
+### Code preparation
 1. Create ``code`` and ``save`` folders.
     ```
     mkdir code
@@ -40,35 +41,40 @@ Install following dependencies:
     git clone https://github.com/seharanul17/interactive_keypoint_estimation
     ```
 
-### 3. Dataset preparation
+### Dataset preparation
 
 We provide the code to conduct experiments on a public dataset, the AASCE challenge dataset.
 
 1. Prepare the data.
-    - The AASCE challenge dataset can be obtained from SpineWeb (http://spineweb.digitalimaginggroup.ca/index.php?n=main.datasets#Dataset_16.3A_609_spinal_anterior-posterior_x-ray_images). 
+    - The AASCE challenge dataset can be obtained from [SpineWeb](http://spineweb.digitalimaginggroup.ca/index.php?n=main.datasets#Dataset_16.3A_609_spinal_anterior-posterior_x-ray_images). 
     - The AASCE challenge dataset corresponds to `Dataset 16: 609 spinal anterior-posterior x-ray images' on the webpage.
     
 2. Preprocess the data.
     - Set the variable ``source_path `` in the ``data_preprocessing.py`` file as your dataset path.
     - Run the ``data_preprocessing.py`` file: 
+    
     ```python data_preprocessing.py```
 
-### 4. Download the pre-trained model
+### Download the pre-trained model
 
 To test the pre-trained model, download the model file from [here](https://www.dropbox.com/sh/m53iqw9loddqhfq/AAD0KuCCxpXsBE435Hw3KJU8a?dl=0).
 
-### 5. Usage
+### Usage
 #### Run training code
 Run the following command:
+
     ```bash train.sh ```
 #### Run evaluation code 
     - To test the pre-trained model: 
         1. Locate the pre-trained model in the ``../save/`` folder.
         2. Run the test code:
+        
         ```bash test.sh```
     - To test your own model:
         1. Change the value of the argument ``--only_test_version {your_model_name}`` in the ``test.sh`` file.
         2. Run the test code:
+        
+        
         ```bash test.sh```
 
 When the evaluation ends, the mean radial error (MRE) of model prediction and manual revision will be reported.
@@ -84,8 +90,8 @@ For more information, please see Fig. 4 in our main manuscript.
 - "Ours (model revision)" indicates automatically revised results by the proposed interactive keypoint estimation approach.
 - "Ours (manual revision)" indicates fully-manually revised results by a user without the assistance of an interactive model.
 
-|      Method     	| No. user modification 	|
-|          	| zero click 	| 1	| 2	| 3  	| 4	| 5	|
+|      Method     	| No. user modification |||||	|
+|                  	| 0	| 1	| 2	| 3  	| 4	| 5	|
 |:----------------:	|:-----------------------:	|:-------:	|:-------:	|:-------:	|:-------:	|:-------:	|
 | Ours (model revision) |          58.58          	|  35.39  	|  29.35  	|  24.02  	|  21.06  	|  17.67  	|
 |  Ours (manual revision) 	|          58.58          	|  55.85  	|  53.33  	|  50.90  	|  48.55  	|  47.03  	|
