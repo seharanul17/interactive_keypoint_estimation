@@ -2,14 +2,14 @@
 <div><h1 align="center">Morphology-Aware Interactive Keypoint Estimation</h1></div>
 
 <div align="center">
-  <span><a href="https://sites.google.com/view/jinhee-kim">Jinhee Kim*</a><br>seharanul17@kaist.ac.kr<br>KAIST</span>
-  <span><a href="https://github.com/ts-kim/">Taesung Kim*</a><br>zkm1989@kaist.ac.kr<br>KAIST</span>
-  <span>Taewoo Kim<br>specia1ktu@kaist.ac.kr<br>KAIST</span><br>
-  <span> <a href="https://sites.google.com/site/jaegulchoo/">Jaegul Choo</a> jchoo@kaist.ac.kr<br>KAIST</span>
-  <span>Dong-Wook Kim <br> dwkim9393@naver.com <br>Korea University Anam Hospital</span><br>
-  <span>Byungduk Ahn <br> bdspeed@naver.com <br>Papa's dental clinic</span>
-  <span>In-Seok Song <br>densis@korea.ac.kr<br>Korea University Anam Hospital</span>
-  <span>Yoon-Ji Kim <br>yn0331@gmail.com<br>Asan Medical Center, Ulsan University School of Medicine</span>
+  <div style='inline-block'><a href="https://sites.google.com/view/jinhee-kim">Jinhee Kim*</a><br>seharanul17@kaist.ac.kr<br>KAIST</div>
+  <div style='inline-block'><a href="https://github.com/ts-kim/">Taesung Kim*</a><br>zkm1989@kaist.ac.kr<br>KAIST</div>
+  <div style='inline-block'>Taewoo Kim<br>specia1ktu@kaist.ac.kr<br>KAIST</div><br>
+  <div style='inline-block'> <a href="https://sites.google.com/site/jaegulchoo/">Jaegul Choo</a> jchoo@kaist.ac.kr<br>KAIST</div>
+  <div style='inline-block'>Dong-Wook Kim <br> dwkim9393@naver.com <br>Korea University Anam Hospital</div><br>
+  <div style='inline-block'>Byungduk Ahn <br> bdspeed@naver.com <br>Papa's dental clinic</div>
+  <div style='inline-block'>In-Seok Song <br>densis@korea.ac.kr<br>Korea University Anam Hospital</div>
+  <div style='inline-block'>Yoon-Ji Kim <br>yn0331@gmail.com<br>Asan Medical Center, Ulsan University School of Medicine</div>
 </div>
 
 <div align="center">
