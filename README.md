@@ -1,6 +1,6 @@
 # Morphology-Aware Interactive Keypoint Estimation (MICCAI 2022) - Official PyTorch Implementation
 
-[<ins>__[Paper]__</ins>]() &nbsp; 
+[<ins>__[Paper]__</ins>](https://arxiv.org/abs/2209.07163) &nbsp; 
 &nbsp; 
  [<ins>__[Project page]__</ins>](https://seharanul17.github.io/interactive_keypoint_estimation/)
 &nbsp;  &nbsp; 
