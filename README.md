@@ -97,3 +97,26 @@ For more information, please see Fig. 4 in our main manuscript.
 | Ours (model revision) |          58.58          	|  35.39  	|  29.35  	|  24.02  	|  21.06  	|  17.67  	|
 |  Ours (manual revision) 	|          58.58          	|  55.85  	|  53.33  	|  50.90  	|  48.55  	|  47.03  	|
 
+
+## Citation
+
+If you find this work or code is helpful in your research, please cite:
+```
+@inproceedings{kim2022morphology,
+  title={Morphology-Aware Interactive Keypoint Estimation},
+  author={Kim, Jinhee and 
+          Kim, Taesung and 
+          Kim, Taewoo and 
+          Choo, Jaegul and 
+          Kim, Dong-Wook and 
+          Ahn, Byungduk and 
+          Song, In-Seok and 
+          Kim, Yoon-Ji},
+  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention},
+  pages={675--685},
+  year={2022},
+  organization={Springer}
+}
+}
+```
+
