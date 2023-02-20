@@ -46,8 +46,9 @@ Install following dependencies:
 Place the downloaded file in the ``pretrained_models`` folder. Related code line can be found [here](https://github.com/seharanul17/interactive_keypoint_estimation/blob/7f50ec271b9ae9613c839533d3958110405d04f5/model/iterativeRefinementModels/RITM_SE_HRNet32.py#L29).
    
 
-4. To test our pre-trained model, download our model file from [here](https://www.dropbox.com/sh/m53iqw9loddqhfq/AAD0KuCCxpXsBE435Hw3KJU8a?dl=0).
-Put the folder into the ``save`` folder. Related code line can be found [here](https://github.com/seharanul17/interactive_keypoint_estimation/blob/7f50ec271b9ae9613c839533d3958110405d04f5/util.py#L77).
+4. To test our pre-trained model, download the folder containing our model file and config file from [here](https://www.dropbox.com/sh/m53iqw9loddqhfq/AAD0KuCCxpXsBE435Hw3KJU8a?dl=0).
+Place the downloaded folder into the ``save`` folder.
+Related code line can be found [here](https://github.com/seharanul17/interactive_keypoint_estimation/blob/7f50ec271b9ae9613c839533d3958110405d04f5/util.py#L77).
 
 
 
