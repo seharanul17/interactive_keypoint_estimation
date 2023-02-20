@@ -33,15 +33,16 @@ Install following dependencies:
 
 
 #### Directory layout 
-.
+&nbsp;.  
 ├── code  
-│   ├── data              
-│   ├── pretrained_models      
-│   ├── train.sh  
-│   ├── test.sh  
-│   └── ...                    
-├── save                      
-└── ...   
+│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── data  
+│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── pretrained_models  
+│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── data_preprocessing.py
+│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── train.sh  
+│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── test.sh  
+│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── ...  
+├── save  
+└── ...  
 
 1. Clone this repository in the ``code`` folder:
     ```
