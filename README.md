@@ -34,14 +34,14 @@ Install following dependencies:
 
 #### Directory layout 
 .
-├── code
+├── code  
 │   ├── data              
 │   ├── pretrained_models      
 │   ├── train.sh  
 │   ├── test.sh  
-│   └── ...                 
-├── save                   
-└── ...
+│   └── ...                    
+├── save                      
+└── ...   
 
 1. Clone this repository in the ``code`` folder:
     ```
