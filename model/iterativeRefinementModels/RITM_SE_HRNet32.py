@@ -26,7 +26,7 @@ class RITM(nn.Module):
         # backbone
         self.ritm_hrnet = HighResolutionNet(width=32, ocr_width=128, small=False, num_classes=config.Dataset.num_keypoint,
                                             norm_layer=nn.BatchNorm2d, addHintEncSENet=True, SE_maxpool=config.Model.SE_maxpool, SE_softmax=config.Model.SE_softmax)
-        self.ritm_hrnet.load_pretrained_weights('/home/nas1_userD/taesung/IKE_InteractiveKeypointEstimation/pretrained_models/hrnetv2_w32_imagenet_pretrained.pth')
+        self.ritm_hrnet.load_pretrained_weights('./pretrained_models/hrnetv2_w32_imagenet_pretrained.pth')
 
 
         if self.config.Model.no_iterative_training:
