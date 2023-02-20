@@ -30,7 +30,7 @@ Install following dependencies:
 
 
 ### Preparing code and model files
-1. Create ``code``, ``pretrained_models`` inside the ``code`` folder, and ``save`` folders.
+1. Create ``code``, ``pretrained_models``, and ``save`` folders.
     ```
     mkdir code
     mkdir code/pretrained_models
