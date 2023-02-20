@@ -90,21 +90,18 @@ We provide the code to conduct experiments on a public dataset, the AASCE challe
 ### Usage
 - To run the training code, run the following command:
     ```
-    cd code
     bash train.sh 
     ```
 - To test the pre-trained model: 
    1. Locate the pre-trained model in the ``../save/`` folder.
    2. Run the test code:
         ```
-        cd code
         bash test.sh
         ```
 - To test your own model:
    1. Change the value of the argument ``--only_test_version {your_model_name}`` in the ``test.sh`` file.
    2. Run the test code:
         ```
-        cd code
         bash test.sh
         ```
 
