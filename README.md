@@ -56,12 +56,17 @@ Related code line can be found [here](https://github.com/seharanul17/interactive
 
 We provide the code to conduct experiments on a public dataset, the AASCE challenge dataset.
 
-1. Download the data.
+1. Create the ``data`` folder inside the ``code`` folder.
+    ```
+    cd code
+    mkdir data
+    ```
+    
+2. Download the data and place it inside the ``data`` folder.
     - The AASCE challenge dataset can be obtained from [SpineWeb](http://spineweb.digitalimaginggroup.ca/index.php?n=main.datasets#Dataset_16.3A_609_spinal_anterior-posterior_x-ray_images). 
     - The AASCE challenge dataset corresponds to `Dataset 16: 609 spinal anterior-posterior x-ray images' on the webpage.
     
-2. Preprocess the downloaded data.
-    - Set the variable ``source_path `` in the ``data_preprocessing.py`` file as your dataset path.
+3. Preprocess the downloaded data. Related code line is [here](https://github.com/seharanul17/interactive_keypoint_estimation/blob/b85c22e26dd315289219cbe1baecdc815ba1d097/data_preprocessing.py#L11).
     - Run the following command: 
         ```
         python data_preprocessing.py
