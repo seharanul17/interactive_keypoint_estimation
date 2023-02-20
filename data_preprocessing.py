@@ -66,8 +66,8 @@ def make_data(image_paths, label_paths):
         label_path = label_paths[idx]
 
         # loda data
-        img = np.repeat(np.array(Image.open(os.path.join(base_image_path,image_path)))[:,:,None], 3, axis=-1) # (row, col) -> (row,col,3)
-        label = scipy.io.loadmat(os.path.join(base_label_path,label_path))['p2'] # x,y
+        img = np.repeat(np.array(Image.open(os.path.join(image_path)))[:,:,None], 3, axis=-1) # (row, col) -> (row,col,3)
+        label = scipy.io.loadmat(os.path.join(label_path))['p2'] # x,y
 
         # make items
         item['image'] = image_path.replace(source_path, '') # remove base path
