@@ -22,7 +22,7 @@ class SaveManager(object):
         with open('./morph_pairs/{}/{}.json'.format(self.config.Dataset.NAME, self.config.Morph.pairs), 'r') as f:
            self.config.Morph.pairs = json.load(f)
 
-        if self.config.Hint.num_dist == 'datset16_1':
+        if self.config.Hint.num_dist == 'datset16':
             self.config.Hint.num_dist = [1 / 8, 1 / 2, 1 / 4, 1 / 16, 1 / 32, 1 / 64, 1 / 128, 1 / 256, 1 / 512, 1 / 1024, 1 / 2048, 1 / 4096, 1 / 4096]+[0 for _ in range(68-13)]
 
     def read_config(self, arg):
