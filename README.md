@@ -30,19 +30,31 @@ Install following dependencies:
 
 
 ### Preparing code and model files
-1. Create ``code``, ``pretrained_models``, and ``save`` folders.
+
+
+#### Directory layout 
+.
+├── code
+│   ├── data              
+│   ├── pretrained_models      
+│   ├── train.sh  
+│   ├── test.sh  
+│   └── ...                 
+├── save                   
+└── ...
+
+1. Clone this repository in the ``code`` folder:
     ```
-    mkdir code
+    git clone https://github.com/seharanul17/interactive_keypoint_estimation code
+    ```
+    
+2. Create ``code/pretrained_models`` and ``save`` folders.
+    ```
     mkdir code/pretrained_models
     mkdir save
     ```
-2. Clone this repository in the ``code`` folder:
-    ```
-    cd code
-    git clone https://github.com/seharanul17/interactive_keypoint_estimation
-    ```
-
-3. To train our model based on the pre-trained HRNet model, download its model file from the [HRNet Github repository](https://github.com/HRNet/HRNet-Image-Classification). 
+   
+3. To train our model using the pretrained HRNet backbone model, download the model file from the [HRNet Github repository](https://github.com/HRNet/HRNet-Image-Classification). 
 Place the downloaded file in the ``pretrained_models`` folder. Related code line can be found [here](https://github.com/seharanul17/interactive_keypoint_estimation/blob/7f50ec271b9ae9613c839533d3958110405d04f5/model/iterativeRefinementModels/RITM_SE_HRNet32.py#L29).
    
 
@@ -66,7 +78,8 @@ We provide the code to conduct experiments on a public dataset, the AASCE challe
     - The AASCE challenge dataset can be obtained from [SpineWeb](http://spineweb.digitalimaginggroup.ca/index.php?n=main.datasets#Dataset_16.3A_609_spinal_anterior-posterior_x-ray_images). 
     - The AASCE challenge dataset corresponds to `Dataset 16: 609 spinal anterior-posterior x-ray images' on the webpage.
     
-3. Preprocess the downloaded data. Related code line is [here](https://github.com/seharanul17/interactive_keypoint_estimation/blob/b85c22e26dd315289219cbe1baecdc815ba1d097/data_preprocessing.py#L11).
+3. Preprocess the downloaded data. 
+    - Related code line is [here](https://github.com/seharanul17/interactive_keypoint_estimation/blob/b85c22e26dd315289219cbe1baecdc815ba1d097/data_preprocessing.py#L11).
     - Run the following command: 
         ```
         python data_preprocessing.py
@@ -76,18 +89,21 @@ We provide the code to conduct experiments on a public dataset, the AASCE challe
 ### Usage
 - To run the training code, run the following command:
     ```
+    cd code
     bash train.sh 
     ```
 - To test the pre-trained model: 
    1. Locate the pre-trained model in the ``../save/`` folder.
    2. Run the test code:
         ```
+        cd code
         bash test.sh
         ```
 - To test your own model:
    1. Change the value of the argument ``--only_test_version {your_model_name}`` in the ``test.sh`` file.
    2. Run the test code:
         ```
+        cd code
         bash test.sh
         ```
 
