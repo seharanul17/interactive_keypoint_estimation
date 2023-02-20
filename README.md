@@ -29,10 +29,11 @@ Install following dependencies:
 - tqdm
 
 
-### Code preparation
-1. Create ``code`` and ``save`` folders.
+### Preparing code and model files
+1. Create ``code``, ``pretrained_models`` inside the ``code`` folder, and ``save`` folders.
     ```
     mkdir code
+    mkdir code/pretrained_models
     mkdir save
     ```
 2. Clone this repository in the ``code`` folder:
@@ -41,24 +42,30 @@ Install following dependencies:
     git clone https://github.com/seharanul17/interactive_keypoint_estimation
     ```
 
-### Dataset preparation
+3. To train our model based on the pre-trained HRNet model, download its model file from [here](https://github.com/HRNet/HRNet-Image-Classification). 
+Place the downloaded file in the ``pretrained_models`` folder. Related code line can be found [here](https://github.com/seharanul17/interactive_keypoint_estimation/blob/7f50ec271b9ae9613c839533d3958110405d04f5/model/iterativeRefinementModels/RITM_SE_HRNet32.py#L29).
+   
+
+4. To test our pre-trained model, download our model file from [here](https://www.dropbox.com/sh/m53iqw9loddqhfq/AAD0KuCCxpXsBE435Hw3KJU8a?dl=0).
+Put the folder into the ``save`` folder. Related code line can be found [here](https://github.com/seharanul17/interactive_keypoint_estimation/blob/7f50ec271b9ae9613c839533d3958110405d04f5/util.py#L77).
+
+
+
+### Preparing data
 
 We provide the code to conduct experiments on a public dataset, the AASCE challenge dataset.
 
-1. Prepare the data.
+1. Download the data.
     - The AASCE challenge dataset can be obtained from [SpineWeb](http://spineweb.digitalimaginggroup.ca/index.php?n=main.datasets#Dataset_16.3A_609_spinal_anterior-posterior_x-ray_images). 
     - The AASCE challenge dataset corresponds to `Dataset 16: 609 spinal anterior-posterior x-ray images' on the webpage.
     
-2. Preprocess the data.
+2. Preprocess the downloaded data.
     - Set the variable ``source_path `` in the ``data_preprocessing.py`` file as your dataset path.
     - Run the following command: 
         ```
         python data_preprocessing.py
         ```
-
-### Download the pre-trained model
-
-To test the pre-trained model, download the model file from [here](https://www.dropbox.com/sh/m53iqw9loddqhfq/AAD0KuCCxpXsBE435Hw3KJU8a?dl=0).
+        
 
 ### Usage
 - To run the training code, run the following command:
