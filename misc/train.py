@@ -102,7 +102,8 @@ class Trainer(object):
             for i, batch in enumerate(tqdm(test_loader)):
                 batch = Munch.fromDict(batch)
                 batch.is_training = False
-                for n_hint in range(10+1):
+                max_hint = 10+1
+                for n_hint in range(max_hint):
                     # 0~max hint
 
                     ## model forward
@@ -157,7 +158,7 @@ class Trainer(object):
             manual_metrics = [metric_manager.average_running_metric() for metric_manager in manual_metric_managers]
 
         # save metrics
-        for t in range(len(post_metrics)):
+        for t in range(min(max_hint, len(post_metrics))):
             save_manager.write_log('(model ) Hint {} ::: {}'.format(t, post_metrics[t]))
             save_manager.write_log('(manual) Hint {} ::: {}'.format(t, manual_metrics[t]))
         save_manager.save_metric(post_metrics, manual_metrics)
