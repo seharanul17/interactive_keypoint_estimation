@@ -110,8 +110,10 @@ for t, item in (enumerate(val_data)):
     coord = np.array(item['label'])
     if coord[:, 1].max() > row:
         print('error:', t, '- exceed max y')
+        remove_list.append(t)
     if coord[:, 0].max() > col:
         print('error:', t, '- excced max x')
+        remove_list.append(t)
 for t in remove_list:
     del val_data[t]
 
