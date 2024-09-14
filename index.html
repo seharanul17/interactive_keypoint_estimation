@@ -1,202 +1,304 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>Morphology-Aware Interactive Keypoint Estimation</title>
-    <style type="text/css">
-    .center {
-        text-align: center;
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="description" content="Morphology-Aware Interactive Keypoint Esitmation">
+  <meta name="keywords" content="Morphology-Aware, InteractiveKeypointEstimation, Keypoint">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Morphology-Aware Interactive Keypoint Esitmation</title>
+
+  <!-- Bootstrap CSS -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
     }
 
-    .lead {
-        font-size: 1.0rem;
-        font-family: Georgia, "Times New Roman", Times, serif;
-    }
+    gtag('js', new Date());
 
-    .author {
-        font-size: 0.9rem;
-    }
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
 
-    .figure-caption {
-        color: #6c757d;
-    }
-    </style>
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
 </head>
-  
+
 <body>
-    <div class="container" style="margin-top:20px;">
-        <div class="row">
-            <div class="col-md-2"></div>
-            <div class="col-md-8">
-                <center>
-                    <h2 style="margin: 20px;">Morphology-Aware <br>Interactive Keypoint Estimation</h2>
-                    <h4>MICCAI 2022</h4><br>
-                    <!-- author -->
-                    <div class="row author">
-                        <div class="col-sm-3">
-                            <a href="https://sites.google.com/view/jinhee-kim"><b>Jinhee Kim*</b></a>
-                            <br>
-                            <i>seharanul17@kaist.ac.kr</i>
-                            <br>
-                            KAIST
-                        </div>
-                        <div class="col-sm-3">
-                            <a href="https://github.com/ts-kim/"><b>Taesung Kim*</b></a>
-                            <br>
-                            <i>zkm1989@kaist.ac.kr</i>
-                            <br>
-                            KAIST
-                        </div>
-                        <div class="col-sm-3">
-                            <a href="https://taeu.github.io/"><b>Taewoo Kim</b></a>
-                            <br>
-                            <i>specia1ktu@kaist.ac.kr</i>
-                            <br>
-                            KAIST
-                        </div>
-                        <div class="col-sm-3">
-                            <a href="https://sites.google.com/site/jaegulchoo/"><b>Jaegul Choo</b></a>
-                            <br>
-                            <i>jchoo@kaist.ac.kr</i>
-                            <br>
-                            KAIST
-                        </div>
-                    </div>
-                    <div class="row author" style="margin-top:18px;">
-                        <div class="col-sm-3">
-                            <b>Dong-Wook Kim</b>
-                            <br>
-                            <i>dwkim9393@naver.com</i>
-                            <br>
-                            Korea University Anam Hospital
-                        </div>
-                        <div class="col-sm-3">
-                            <b>Byungduk Ahn</b>
-                            <br>
-                            <i>bdspeed@naver.com</i>
-                            <br>
-                            Papa's dental clinic
-                        </div>
-                        <div class="col-sm-3">
-                            <b>In-Seok Song**</b>
-                            <br>
-                            <i>densis@korea.ac.kr</i>
-                            <br>
-                            Korea University Anam Hospital
-                        </div>
-                        <div class="col-sm-3">
-                            <b>Yoon-Ji Kim**</b>
-                            <br>
-                            <i>yn0331@gmail.com</i>
-                            <br>
-                            Asan Medical Center, Ulsan University School of Medicine
-                        </div>
-                    </div>
-                    <div align="center"> *Both authors contributed equally. **Both authors are the co-corresponding authors. </div>
-                </center>
-                <!-- Teaser -->
-                <center>
-                    <figure class="figure">
-                        <img src="./video.gif" class="figure-img img-fluid" alt="Responsive image" style="margin:20px 0px;">
-                        <figcaption align="center" class="figure-caption text-justify">
-                            <center>Overview of the proposed approach.</center>
-                        </figcaption>
-                    </figure>
-                </center>
-                <!-- Abstract -->
-                <hr>
-                <div>
-                    <h3>Abstract</h3>
-                    <p class="lead text-justify">
-                        Diagnosis based on medical images, such as X-ray images, often involves manual annotation of anatomical keypoints. However, this process involves significant human efforts and can thus be a bottleneck in the diagnostic process. To fully automate this procedure, deep-learningbased methods have been widely proposed and have achieved high performance in detecting keypoints in medical images. However, these methods still have clinical limitations: accuracy cannot be guaranteed for all cases, and it is necessary for doctors to double-check all predictions of models. In response, we propose a novel deep neural network that, given an Xray image, automatically detects and refines the anatomical keypoints through a user-interactive system in which doctors can fix mispredicted keypoints with fewer clicks than needed during manual revision. Using our own collected data and the publicly available AASCE dataset, we demonstrate the effectiveness of the proposed method in reducing the annotation costs via extensive quantitative and qualitative results.
-                    </p>
-                </div>
-                <hr>
-                <div>
-                    <h3>Paper and Supplementary Material</h3>
-                    <div class="row">
-                        <div class="col-sm-3">
-                            <img src="./paper.PNG" class="img-fluid border" alt="" style="margin:20px;">
-                        </div>
-                        <div class="col" style="margin-top: auto; margin-bottom: auto;">
-                            <div class="align-middle">
-                                <a href="https://arxiv.org/abs/2209.07163">[Arxiv]</a>
-                                <a href="https://github.com/seharanul17/interactive_keypoint_estimation">[Code]</a>
-                                <a href="https://youtu.be/Z5gtLviQ_TU">[Video]</a>
-                                <p class="lead">
-                                    MICCAI, 2022. <br>
-                                    Jinhee Kim*, Taeusng Kim*, Taewoo Kim, Jaegul Choo, <br> Dong-Wook Kim, Byungduk Ahn, In-Seok Song**, and Yoon-Ji Kim**<br>
-                                    "Morphology-Aware Interactive Keypoint Estimation"
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <hr>
-                <div>
-                    <h3>Method overview</h3>
-                    <center>
-                        <figure class="figure">
-                            <img src="./model.png" class="figure-img img-fluid" alt="Responsive image" style="margin:20px;">
-                            <figcaption class="figure-caption text-justify">
-                                <center>
-                                    Figure: Overview of proposed interactive keypoint estimation model. 
-                                </center>
-                            </figcaption>
-                        </figure>
-                      <figure class="figure">
-                            <img src="./morph_loss.PNG" class="figure-img img-fluid" alt="Responsive image" style="margin:20px;">
-                            <figcaption class="figure-caption text-justify">
-                                <center>
-                                    Figure: Illustration of Morphology-aware loss.
-                                </center>
-                            </figcaption>
-                        </figure>
-                    </center>
-                </div>
-                <hr>
-                <div>
-                    <h3>Poster</h3>
-                    <center>
-                        <figure class="figure">
-                            <img src="./online_poster_miccai22.png" class="figure-img img-fluid" alt="Responsive image" style="margin:20px;">
-                        </figure>
-                    </center>
-<!--                     <center>
-                        <figure class="figure">
-                            <img src="./figs/additional_results_penn_interp.png" class="figure-img img-fluid" alt="Responsive image">
-                            <figcaption class="figure-caption text-justify">
-                                <center>
-                                    Figure: Qualitative comparisons with interpolation baselines on the Penn Action dataset.
-                                </center>
-                            </figcaption>
-                        </figure>
-                    </center> -->
-                </div>
-                <hr>
-                <div>
-                    <h3>Video</h3>
-                    <center>
-                        <object data='https://www.youtube.com/embed/Z5gtLviQ_TU?autoplay=0' width=640px height=360px style="margin:20px;">
-                        </object>
-                    </center>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-2"></div>
-        <br><br>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
     </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <div class="navbar-menu">
+      <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+        <a class="navbar-item" href="https://keunhong.com">
+          <span class="icon">
+            <i class="fas fa-home"></i>
+          </span>
+        </a>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            More Research
+          </a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://ts-kim.github.io/KeyBot/">
+              KeyBot
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </nav>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Morphology-Aware Interactive Keypoint Estimation</h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://sites.google.com/view/jinhee-kim">Jinhee Kim*</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://www.linkedin.com/in/taesung-kim-142a53277">Taesung Kim*</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://taeu.github.io/">Taewoo Kim</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://sites.google.com/site/jaegulchoo/">Jaegul Choo</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="mailto:dwkim9393@naver.com">Dong-Wook Kim</a><sup>2</sup>,
+              </span>
+              <span class="author-block">
+                <a href="mailto:bdspeed@naver.com">Byungduk Ahn</a><sup>3</sup>,
+              </span>
+              <span class="author-block">
+                <a href="mailto:densis@korea.ac.kr">In-Seok Song**</a><sup>2</sup>
+              </span>
+              <span class="author-block">
+                <a href="mailto:yn0331@gmail.com">Yoon-Ji Kim**</a><sup>4</sup>
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>KAIST,</span>
+              <span class="author-block"><sup>2</sup>Korea University Anam Hospital,</span>
+              <span class="author-block"><sup>3</sup>Papa's dental clinic,</span>
+              <span class="author-block"><sup>4</sup>Asan Medical Center, Ulsan University School of Medicine</span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/pdf/2209.07163" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2209.07163" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+                <!-- Video Link. -->
+                <span class="link-block">
+                  <a href="https://youtu.be/Z5gtLviQ_TU?si=qJOUQ5BcZUZR6Pmw"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                    </span>
+                    <span>Video</span>
+                  </a>
+                </span>
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <a href="https://github.com/seharanul17/interactive_keypoint_estimation"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+              </div>
+              <img src="./miccai2022-logo.png" class="figure-img img-fluid" alt="Responsive image"
+                style="margin:20px 0px;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="hero teaser"></section>
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="./video.gif" class="figure-img img-fluid" alt="Responsive image" style="margin:20px 0px;">
+      <h2 class="subtitle has-text-centered">
+        <span class="dnerf">Overview of the proposed approach.</span>
+      </h2>
+    </div>
+  </div>
+  </section>
+
+  <section class="section"></section>
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Diagnosis based on medical images, such as X-ray images, often involves manual annotation of
+            anatomical keypoints. However, this process involves significant human efforts and can thus be a
+            bottleneck in the diagnostic process. To fully automate this procedure, deep-learningbased
+            methods have been widely proposed and have achieved high performance in detecting keypoints in
+            medical images. However, these methods still have clinical limitations: accuracy cannot be
+            guaranteed for all cases, and it is necessary for doctors to double-check all predictions of
+            models. In response, we propose a novel deep neural network that, given an Xray image,
+            automatically detects and refines the anatomical keypoints through a user-interactive system in
+            which doctors can fix mispredicted keypoints with fewer clicks than needed during manual
+            revision. Using our own collected data and the publicly available AASCE dataset, we demonstrate
+            the effectiveness of the proposed method in reducing the annotation costs via extensive
+            quantitative and qualitative results.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+    <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/Z5gtLviQ_TU?autoplay=0" frameborder="0"
+            allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <!--/ Paper video. -->
+  </div>
+  </section>
+
+  <section class="section">
+    <!-- Supplement matarials -->
+    <div class="columns is-centered">
+      <div class="column">
+        <div class="content">
+          <h2 class="title is-3">Method overview </h2>
+
+          <center>
+
+            <figure class="figure">
+              <img src="./model.png" class="figure-img img-fluid" alt="Responsive image" style="margin:20px;">
+              <figcaption class="figure-caption text-justify">
+                <center>
+                  Figure: Overview of proposed interactive keypoint estimation model.
+                </center>
+              </figcaption>
+            </figure>
+            <figure class="figure">
+              <img src="./morph_loss.PNG" class="figure-img img-fluid" alt="Responsive image" style="margin:20px;">
+              <figcaption class="figure-caption text-justify">
+                <center>
+                  Figure: Illustration of Morphology-aware loss.
+                </center>
+              </figcaption>
+            </figure>
+          </center>
+        </div>
+
+      </div>
+    </div>
+    <!--/ Supplement matarials -->
+
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column">
+          <div class="content">
+            <h2 class="title is-3">Poster</h2>
+
+            <center>
+              <figure class="figure">
+                <img src="./online_poster_miccai22.png" class="figure-img img-fluid" alt="Responsive image"
+                  style="margin:20px;">
+              </figure>
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@inproceedings{kim2022morphology,
+        title={Morphology-aware interactive keypoint estimation},
+        author={Kim, Jinhee and 
+                Kim, Taesung and 
+                Kim, Taewoo and 
+                Choo, Jaegul and 
+                Kim, Dong-Wook and 
+                Ahn, Byungduk and 
+                Song, In-Seok and 
+                Kim, Yoon-Ji},
+        booktitle={International Conference on Medical Image Computing and 
+                   Computer-Assisted Intervention},
+        pages={675--685},
+        year={2022},
+        organization={Springer}
+}</code></pre>
+    </div>
+  </section>
+
+
+  <footer class="footer"></footer>
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            The page template is based on <a href="https://github.com/nerfies/nerfies.github.io">Nerfies GitHub
+              repository</a> source code.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </footer>
+
 </body>
 
 </html>
-
